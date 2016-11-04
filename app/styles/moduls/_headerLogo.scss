@@ -1,0 +1,37 @@
+.di_logo {
+  &__desktop {
+    .di_main .di_header .di_header__logo {
+      i.fa-desktop {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+
+  &__laptop {
+    .di_main .di_header .di_header__logo {
+      i.fa-laptop {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+
+  &__tablet {
+    .di_main .di_header .di_header__logo {
+      i.fa-tablet {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+
+  &__mobile {
+    .di_main .di_header .di_header__logo {
+      i.fa-mobile {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+}

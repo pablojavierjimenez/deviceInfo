@@ -1,0 +1,19 @@
+.coli_content {
+  @import "contents/overly";
+  @import "contents/spinner";
+  @import "contents/article";
+}
+
+.open_modal--login,
+.open_modal--register,
+.open_modal--facebookRegister,
+.open_modal--forgotPassword,
+.open_modal--forgotPasswordMessage,
+.open_modal--codeActivation-success,
+.open_modal--codeActivation-error,
+.open_modal--codeActivation-captchaError,
+.open_modal--codeActivation-duplicated {
+  .modal-close-over {
+    display: block;
+  }
+}

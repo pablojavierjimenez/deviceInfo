@@ -1,0 +1,13 @@
+.di_locationData__container {
+  .di_locationData__mapContainer {
+    text-align: center;
+    span.fa-stack {
+        margin: auto;
+        margin-top: 33%;
+      .fa-map-marker {
+        color: $header-bg;
+        font-size: 4rem;
+      }
+    }
+  }
+}

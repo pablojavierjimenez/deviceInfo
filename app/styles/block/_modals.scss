@@ -1,0 +1,185 @@
+.open_modal {
+  &--start {
+    @import "../modules/_start";
+  }
+
+  &--login {
+    @import "../modules/_login";
+  }
+
+  &--register {
+    @import "../modules/_register";
+  }
+
+  &--facebookLogin {
+    @import "../modules/_facebookLogin";
+  }
+
+  &--facebookRegister {
+    @import "../modules/_facebookRegister";
+  }
+
+  &--forgotPassword {
+    @import "../modules/_forgotPassword";
+  }
+
+  &--forgotPasswordMessage {
+    @import "../modules/_forgotPasswordMessage";
+  }
+
+  &--changePassword {
+    @import "../modules/_changePassword";
+  }
+
+  &--codeActivation {
+    @import "../modules/_codeActivation";
+  }
+
+  &--codeActivation-duplicated {
+    @import "../modules/_codeActivation-duplicated";
+  }
+
+  &--codeOnHold {
+    @import "../modules/_codeOnHold";
+  }
+
+  &--codeActivation-success {
+    @import "../modules/_codeActivation-success";
+  }
+
+  &--codeActivation-error {
+    @import "../modules/_codeActivation-error";
+  }
+
+  &--codeActivation-captchaError {
+    @import "../modules/_codeActivation-captchaError";
+  }
+
+  &--changePassword-mesage {
+    @import "../modules/_changePassword-mesage";
+  }
+
+  &--changePassword-success {
+    @import "../modules/_changePassword-success";
+  }
+}
+
+.coli_modal__close {
+  @media (min-width: $bp-small) {
+    width: 30px;
+    height: 30px;
+    right: 0;
+    position: absolute;
+    border: solid 1px $beige-dark;
+    border-radius: 50%;
+    margin: .8rem;
+    top: 0;
+    font-size: .85rem;
+    color: $beige-dark;
+    line-height: 1.84rem;
+
+    &:hover {
+      color: $beige-darkest;
+      border: solid 1px $beige-darkest;
+    }
+  }
+
+  &:after {
+    color: $beige-dark;
+  }
+
+  &:hover {
+    background-color: $green;
+    color: $beige;
+    cursor: pointer;
+  }
+}
+
+.coli_modal_links {
+  font-size: 1rem;
+  margin-top: .8rem;
+
+  hr {
+    max-width: 30%;
+    color: $beige-dark;
+    margin: 1.5rem auto;
+  }
+}
+
+.coli_modal__footer {
+  display: none;
+
+  @media screen and (min-width: $bp-small) {
+    display: block;
+  }
+
+  & > div {
+    max-width: $bp-medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    & p {
+      color: $black;
+      font-size: .5rem;
+      line-height: 1.5;
+      margin: 0;
+
+      @media screen and (min-width: $bp-small) {
+        font-size: .6rem;
+        padding: 0 .8rem;
+      }
+
+      a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    span {
+      font-family: Gotham-Bold;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-right: .5rem;
+      min-width: 3.5em;
+      padding: 0;
+
+      @media screen and (min-width: $bp-small) {
+        margin-right: 15px;
+        font-size: 1rem;
+      }
+
+      li {
+        overflow: hidden;
+
+        a {
+          display: block;
+          width: 1.5em;
+          height: 1.5em;
+          background-repeat: no-repeat;
+          text-indent: 2.5em;
+        }
+
+        &.fb a {
+          background-image: url(../img/icon-facebook.svg);
+          cursor: pointer;
+        }
+
+        &.tw a {
+          background-image: url(../img/icon-twitter.svg);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@import "../helpers/_browsers-specials";

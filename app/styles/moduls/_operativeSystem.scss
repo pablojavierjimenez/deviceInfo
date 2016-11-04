@@ -1,0 +1,63 @@
+.di_Os {
+  &__default {
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-wheelchair-alt {
+        display: block;
+        color: #ff0000;
+      }
+    }
+  }
+
+  &__Windows-NT{
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-windows {
+        display: block;
+      }
+    }
+  }
+
+  &__Windows-Phone{
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-windows {
+        display: block;
+        color: #0078D7;
+      }
+    }
+  }
+
+  &__OS-X{
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-apple {
+        display: block;
+        color: #ededed;
+      }
+    }
+  }
+
+  &__iOS{
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-apple {
+        display: block;
+        color: #ededed;
+      }
+    }
+  }
+
+  &__Android{
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-android {
+        display: block;
+        color: #6ab344;
+      }
+    }
+  }
+
+  &__Ubuntu-Chromium {
+    .di_operatingSystemData__container .di_operatingSystemData__logo {
+      i.fa-linux  {
+        display: block;
+        color: #E95420;
+      }
+    }
+  }
+}

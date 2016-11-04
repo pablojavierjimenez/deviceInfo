@@ -1,0 +1,3 @@
+node_modules
+app/scripts/libs
+**/*-be-ignored.js

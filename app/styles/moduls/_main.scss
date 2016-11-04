@@ -1,0 +1,58 @@
+.di_main {
+  font-size: 2.5rem;
+  min-height: 50px;
+  //si se usa el tag <main> en mobile al menos en windowphon no te deja ponerle background-color
+  //por eso se termino usando un section para los mismos fines
+  border: 3px solid $black;
+  color: $black;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  text-align: left;
+
+  @media (min-width: $bp-small) {
+    max-width: 960px;
+  }
+
+  @import "header";
+
+  .di_content {
+    padding: 1rem;
+
+    @import "browserDataContainer";
+    @import "operatingSystemDataContainer";
+    .di_panelsData__container {
+      display: block;
+      width: 100%;
+
+      @media (min-width: $bp-min-Tablets-768) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @import "panelContainer";
+      @import "locationDataContainer";
+    }
+
+
+  }
+
+  section.di_screenData__container div span {
+      min-width: 80px;
+      max-width: 30%;
+      width: 30%;
+      text-align: right;
+  }
+  section.di_screenData__container div span:first-child {
+    text-align: left;
+  }
+
+  .di_infocontainer {
+    text-align: left;
+    padding: .5rem;
+    font-size: 1.1rem;
+  }
+}

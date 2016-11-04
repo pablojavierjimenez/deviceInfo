@@ -1,0 +1,88 @@
+.di_browser {
+  &__default {
+    .di_browserData__container .di_browserData__logo {
+      i.fa-blind {
+        display: block;
+        color: #ff0000;
+      }
+    }
+  }
+
+  &__Chrome{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-chrome {
+        display: block;
+        color: #0078d7;
+      }
+    }
+  }
+
+  &__Android-Browser{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-globe { //fa-globe
+        display: block;
+      }
+    }
+  }
+
+  &__Chrome-Mobile{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-chrome {
+        display: block;
+      }
+    }
+  }
+
+  &__Microsoft-Edge{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-edge {
+        display: block;
+        color: #0078D7;
+      }
+    }
+  }
+
+  &__IE{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-internet-explorer {
+        display: block;
+        color: #5CC3FF;
+      }
+    }
+  }
+
+  &__IE-Mobile{
+    .di_browserData__container .di_browserData__logo {
+      i.fa-internet-explorer {
+        display: block;
+      }
+    }
+  }
+
+  &__Firefox {
+    .di_browserData__container .di_browserData__logo {
+      i.fa-firefox {
+        display: block;
+        color:#e55525;
+      }
+    }
+  }
+
+  &__Safari {
+    .di_browserData__container .di_browserData__logo {
+      i.fa-safari {
+        display: block;
+        color: #0078D7;
+      }
+    }
+  }
+
+  &__Opera {
+    .di_browserData__container .di_browserData__logo {
+      i.fa-opera {
+        display: block;
+        color: #ff0000;
+      }
+    }
+  }
+}

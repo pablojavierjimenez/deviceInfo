@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>gulp less sass handlebars</title>
+
+  <link rel="icon" sizes="16x16 32x32" href="images/favicon/android-chrome-36x36.png">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- build:css css/vendor.css -->
+      <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/app.css -->
+      <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+</head>
+<body id="di_JS__body" class='di_JS_body di_body di_browser__default di_Os__default'>
+
+  <section class='di_JS_main di_main'>
+    <header class='di_JS_header di_header'>
+      <div class="di_header__logo">
+        <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <i class="fa fa-tablet" aria-hidden="true"></i>
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+      </div>
+      <div class="di_header__name">Device-Info</div>
+    </header>
+
+    <section class="di_content">
+
+      <section class="di_browserData__container">
+        <section class="di_browserData__logo">
+          <i class="fa fa-frown-o" aria-hidden="true"></i>
+          <i class="fa fa-blind" aria-hidden="true"></i>
+          <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+          <i class="fa fa-chrome" aria-hidden="true"></i>
+          <i class="fa fa-opera" aria-hidden="true"></i>
+          <i class="fa fa-safari" aria-hidden="true"></i>
+          <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+          <i class="fa fa-firefox" aria-hidden="true"></i>
+          <i class="fa fa-edge" aria-hidden="true"></i>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </section>
+        <section class="di_browserData__data">
+          <div class="di_browserData__name">Name:<span></span></div>
+          <div class="di_browserData__version">Version:<span></span></div>
+          <div class="di_browserData__engine">Engine:<span></span></div>
+          <div class="di_browserData__lang">Browser Lang:<span></span></div>
+        </section>
+      </section>
+
+      <section class="di_operatingSystemData__container">
+        <section class="di_operatingSystemData__logo">
+          <i class="fa fa-bug" aria-hidden="true"></i>
+          <i class="fa fa-windows" aria-hidden="true"></i>
+          <i class="fa fa-linux" aria-hidden="true"></i>
+          <i class="fa fa-apple" aria-hidden="true"></i>
+          <i class="fa fa-android" aria-hidden="true"></i>
+        </section>
+        <section class="di_operatingSystemData__data">
+          <div class="di_operatingSystemData__family">OS:<span></span></div>
+          <div class="di_operatingSystemData__version">version:<span></span></div>
+          <div class="di_operatingSystemData__platform">Platform:<span></span></div>
+          <div class="di_operatingSystemData__architecture">Architecture:<span></span></div>
+        </section>
+      </section>
+
+      <sections class="di_panelsData__container">
+
+        <!-- BROWSER SIZE -->
+        <section class="di_panel__container">
+          <div class="di_panel__header">
+
+            <span class="di_panel__header--left">
+              <span class="di_panel__header--iconContainer">
+                <img src="img/browser-icon-128.svg" alt="">
+              </span>
+              <span class="di_panel__header--titleText">Browser</span>
+            </span>
+
+            <span class="di_panel__header--right di_browserSize__header--bottons">
+              <span class="di_JS_browserSize__btn--px di_browserSize__btn di_browserSize__btn--px selected">px</span>
+              <span class="di_JS_browserSize__btn--rem di_browserSize__btn di_browserSize__btn--rem">rem</span>
+            </span>
+          </div>
+
+          <div class="di_panel__row di_JS_browserSize__viewPortWidth">
+            <span class="di_panel__content--property">ViewPort Width:</span>
+            <span class="di_panel__content--value di_JS_browserSize__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+          <div class="di_panel__row di_JS_browserSize__availableWidth">
+            <span class="di_panel__content--property">available Width:</span>
+            <span class="di_panel__content--value di_JS_browserSize__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+          <div class="di_panel__row di_JS_browserSize__viewPortHeight">
+            <span class="di_panel__content--property">ViewPort Height:</span>
+            <span class="di_panel__content--value di_JS_browserSize__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+          <div class="di_panel__row di_JS_browserSize__availableHeight">
+            <span class="di_panel__content--property">available Height:</span>
+            <span class="di_panel__content--value di_JS_browserSize__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+        </section>
+
+        <!-- SCREEN SIZE -->
+        <section class="di_panel__container">
+          <div class="di_panel__header">
+            <span class="di_panel__header--left">
+              <span class="di_panel__header--iconContainer">
+                <span class="fa-stack">
+                  <i class="fa fa-television fa-stack-2x"></i>
+                  <i class="fa fa-arrows-alt fa-stack-1x text-danger"></i>
+                </span>
+              </span>
+              <span class="di_panel__header--titleText">Screen</span>
+            </span>
+          </div>
+
+          <div class="di_panel__row di_JS_screenData__screenWidth">
+            <span class="di_panel__content--property">Screen Width:</span>
+            <span class="di_panel__content--value di_JS_screenData__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+          <div class="di_panel__row di_JS_screenData__screenHeight">
+            <span class="di_panel__content--property">Screen Height:</span>
+            <span class="di_panel__content--value di_JS_screenData__data"></span>
+            <span class="di_panel__content--sizeUnity">px</span>
+          </div>
+          <div class="di_panel__row di_JS_screenData__pixelDepth">
+            <span class="di_panel__content--property">Pixel Depth:</span>
+            <span class="di_panel__content--value di_JS_screenData__data"></span>
+            <span class="di_panel__content--sizeUnity">b/p</span>
+          </div>
+          <div class="di_panel__row di_JS_screenData__colorDepth">
+            <span class="di_panel__content--property">Color Depth:</span>
+            <span class="di_panel__content--value di_JS_screenData__data"></span>
+            <span class="di_panel__content--sizeUnity">b/p</span>
+          </div>
+          <div class="di_panel__row di_JS_screenData__pixelRatio">
+            <span class="di_panel__content--property">Pixel Ratio:</span>
+            <span class="di_panel__content--value di_JS_screenData__data"></span>
+            <span class="di_panel__content--sizeUnity">-</span>
+          </div>
+        </section>
+
+        <!-- ORIENTATION -->
+        <section class="di_panel__container">
+
+          <div class="di_panel__header">
+            <span class="di_panel__header--left">
+              <span class="di_panel__header--iconContainer">
+                <span class="fa-stack">
+                  <i class="fa fa-refresh fa-stack-2x" aria-hidden="true"></i>
+                </span>
+              </span>
+              <span class="di_panel__header--titleText">Orientation</span>
+            </span>
+          </div>
+
+          <div class="di_panel__row di_JS_orientationData__orientationType">
+            <span class="di_panel__content--property">Type:</span>
+            <span class="di_panel__content--value di_JS_orientationData__data"></span>
+          </div>
+
+          <div class="di_panel__row di_JS_orientationData__orientationAngle">
+            <span class="di_panel__content--property">Angle:</span>
+            <span class="di_panel__content--value di_JS_orientationData__data"></span>
+          </div>
+
+          <div class="di_panel__row di_JS_orientationData__orientationRotatedTo">
+            <span class="di_panel__content--property">Rotated To:</span>
+            <span class="di_panel__content--value di_JS_orientationData__data"></span>
+          </div>
+        </section>
+
+        <!-- DEVICE -->
+        <section class="di_panel__container">
+
+          <div class="di_panel__header">
+            <span class="di_panel__header--left">
+              <span class="di_panel__header--iconContainer">
+                <span class="fa-stack">
+                  <i class="fa fa-cubes fa-stack-2x" aria-hidden="true"></i>
+                </span>
+              </span>
+              <span class="di_panel__header--titleText">Device</span>
+            </span>
+          </div>
+
+          <div class="di_panel__row di_JS_deviceata__deviceManufacturer">
+            <span class="di_panel__content--property">Manufacturer:</span>
+            <span class="di_panel__content--value di_JS_deviceata__data"></span>
+          </div>
+
+          <div class="di_panel__row di_JS_deviceata__deviceProduct">
+            <span class="di_panel__content--property">Product:</span>
+            <span class="di_panel__content--value di_JS_deviceata__data"></span>
+          </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="di_panel__container di_locationData__container">
+          <div class="di_panel__header">
+            <span class="di_panel__header--left">
+              <span class="di_panel__header--iconContainer">
+                <span class="fa-stack">
+                  <i class="fa fa-map-o fa-stack-2x" aria-hidden="true"></i>
+                </span>
+              </span>
+              <span class="di_panel__header--titleText">Location</span>
+            </span>
+          </div>
+
+          <div class="di_panel__row di_JS_locationData__latitude">
+            <span class="di_panel__content--property">Latitud:</span>
+            <span class="di_panel__content--value di_JS_locationData__data"></span>
+            <span class="di_panel__content--sizeUnity">°</span>
+          </div>
+          <div class="di_panel__row di_JS_locationData__longitude">
+            <span class="di_panel__content--property">Longitud:</span>
+            <span class="di_panel__content--value di_JS_locationData__data"></span>
+            <span class="di_panel__content--sizeUnity">°</span>
+          </div>
+          <div class="di_panel__row di_JS_locationData__altitude">
+            <span class="di_panel__content--property">Altitude:</span>
+            <span class="di_panel__content--value di_JS_locationData__data"></span>
+            <span class="di_panel__content--sizeUnity">m</span>
+          </div>
+          <div class="di_panel__row di_JS_locationData__speed">
+            <span class="di_panel__content--property">Speed:</span>
+            <span class="di_panel__content--value di_JS_locationData__data"></span>
+            <span class="di_panel__content--sizeUnity">k/h</span>
+          </div>
+          <div class="di_panel__row di_JS_locationData__accuracy">
+            <span class="di_panel__content--property">Accuracy:</span>
+            <span class="di_panel__content--value di_JS_locationData__data"></span>
+            <span class="di_panel__content--sizeUnity">-</span>
+          </div>
+          <div class="di_JS_locationData__mapContainer di_locationData__mapContainer">
+            <span class="fa-stack">
+              <i class="fa fa-map-marker fa-stack-2x" aria-hidden="true"></i>
+            </span>
+          </div>
+        </section>
+
+
+      </sections>
+    </section>
+
+    <section id="infocontainer" class="di_JS_infocontainer di_infocontainer"></section>
+  </section>
+
+  <!--build:js js/libs.min.js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/platform.js/platform.js"></script>
+  <!-- endbuild -->
+
+
+  <!--build:js js/app.min.js -->
+    <script src="./js/app.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>

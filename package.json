@@ -1,0 +1,29 @@
+{
+  "name": "device-info",
+  "version": "0.0.1",
+  "description": "\"herramienta que podra colocarce en cualquier proyecto para poder ser consulta para obtener datos del dispositivo particular en el cual se esta visualizando nuestro proyecto\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yey shey",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.1.5"
+  }
+}

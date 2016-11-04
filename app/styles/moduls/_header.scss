@@ -1,0 +1,21 @@
+.di_header {
+  display: flex;
+  padding: .5rem 1rem;
+  background-color: $header-bg;
+  font-family: 'Lobster', Helvetica, Arial, sans-serif;
+  min-height: 50px;
+  margin: auto;
+
+  &__logo{
+    font-size: 2.5rem;
+    i {
+      display: none;
+    }
+  }
+
+  &__name{
+    font-size: 2rem;
+    padding-left: 1rem;
+    text-shadow: .13rem 0px #eee;
+  }
+}

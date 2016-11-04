@@ -1,0 +1,36 @@
+.di_operatingSystemData__container {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 .8rem;
+  border-bottom: 2px solid #212121;
+
+  .di_operatingSystemData__logo {
+      padding:.5rem 0;
+      text-align: center;
+
+      @media (min-width: $bp-small) {
+        //background-color: #ff3434;
+        width: 5rem;
+      }
+
+      i {
+        display: none;
+        font-size: 3rem;
+      }
+    }
+
+  .di_operatingSystemData__data {
+    padding: .3rem .8rem;
+    div {
+      color:#8a8a8a;
+      //padding: .4rem 0 0;
+    }
+    span {
+      //border: 1px solid #f09;
+      padding-left: .8rem;
+      font-size: 1rem;
+      color: $black;
+    }
+  }
+}

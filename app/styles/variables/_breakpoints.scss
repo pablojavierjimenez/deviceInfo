@@ -1,0 +1,82 @@
+// List of media queries
+// All media queries should come from this list
+
+// Small screen / phone (688px)
+$bp-ssm: 23em;
+
+// Small screen / phone (688px)
+$bp-sm: 34em;
+
+// Medium screen / tablet (768px)
+$bp-md: 48em;
+
+// Large screen / desktop (960px)
+$bp-lg: 60em;
+
+// Extra large screen / wide desktop
+$bp-xl: 105em;
+
+$bp-small: 359px;
+$bp-medium: 770px;
+$bp-large: 1024px;
+
+// Others specific breackpoint by the way
+$bp-min-Smartphones-320 : 320px; /* Regular Smartphones, iPhone 4, 5, Samsung Galaxy S3 S4 ----------- */
+$bp-min-Smartphones-360 : 360px; /* Samsung Galaxy S5 */
+$bp-min-Smartphones-375 : 375px; /* iPhone 6 */
+$bp-min-Smartphones-414 : 414px; /* iPhone 6+ */
+$bp-min-Tablets-768 : 768px; /* iPads */
+
+$bp-max-Smartphones-480 : 480px; /* Regular Smartphones */
+$bp-max-Smartphones-568 : 568px; /* iPhone 5 */
+$bp-max-Smartphones-640 : 640px; /* Samsung Galaxy S3 S4 S5 */
+$bp-max-Smartphones-667 : 667px; /* iPhone 6 */
+$bp-max-Smartphones-736 : 736px; /* iPhone 6+ */
+$bp-max-Tablets-1024 : 1024px;
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+/* Styles */
+}
+
+/* Samsung Galaxy S3 S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) {
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+/* Styles */
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}

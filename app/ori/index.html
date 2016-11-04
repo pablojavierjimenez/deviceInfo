@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Device INFO</title>
+	<style>
+
+		button {
+			font-size: 2rem;
+			padding:1rem;
+			margin:1rem;
+		}
+	</style>
+</head>
+<body id='body'>
+	<button onclick="reload('infocontainer')">recargar</button>
+	<div id="infocontainer"></div>
+</body>
+<script src="platform.js"></script>
+<script>
+	function enumerateObject(Obj, target) {
+		for(var key in Obj) {
+		    var value = Obj[key];
+		    var element;
+		    if (typeof(value) == 'function' ) {
+		      //element = key + ' : is a function';
+		    } else {
+		      element = key + ' : ' + value ;
+		      appendTo(target, element);
+		    }
+		}
+	};
+	function appendTo(elemId, strToAdd) {
+		var node = document.createElement("P");
+		var textnode = document.createTextNode(strToAdd);         // Create a text node
+		node.appendChild(textnode);
+		document.getElementById(elemId).appendChild(node);
+	};
+
+	function reload(element) {
+		document.getElementById(element).innerHTML = "";
+		var w = "viewport WIdth : " + Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		var h = "viewport Height : " + Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		enumerateObject(platform, element);
+		appendTo(element, w);
+		appendTo(element, h);
+	}
+
+	/// IMPLEMENT
+	reload('infocontainer');
+
+</script>
+</html>
