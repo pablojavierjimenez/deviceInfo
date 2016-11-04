@@ -1,4 +1,4 @@
-COCA_COLA LIFE: LIFERS
+Device Info
 ======================
 - [Installation](#installation)
 - [Develoment Tacks](#develoment-tacks)
